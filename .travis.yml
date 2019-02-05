@@ -3,7 +3,7 @@ language: ruby
 bundler_args: --without system_tests
 script: 'SPEC_OPTS="--format documentation" bundle exec rake validate lint spec'
 before_install:
-  - gem install bundler # -v x.x.x if a specific version is needed
+  - gem install bundler -v 1.14 # -v x.x.x if a specific version is needed
 matrix:
   fast_finish: true
   include:
