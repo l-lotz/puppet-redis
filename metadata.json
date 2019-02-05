@@ -1,6 +1,6 @@
 {
   "name": "arioch-redis",
-  "version": "3.3.0",
+  "version": "4.0.0",
   "author": "Tom De Vylder",
   "summary": "Redis module",
   "license": "Apache-2.0",
@@ -8,8 +8,8 @@
   "project_page": "http://arioch.github.io/puppet-redis/",
   "issues_url": "https://github.com/arioch/puppet-redis/issues",
   "dependencies": [
-    {"name":"puppetlabs/apt","version_requirement":">= 2.3.0 <6.0.0"},
-    {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.2 <5.0.0"},
+    {"name":"puppetlabs/apt","version_requirement":">= 2.3.0 <7.0.0"},
+    {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.2 <6.0.0"},
     {"name":"stahnma/epel","version_requirement":">= 1.2.2 <2.0.0"},
     {
       "name": "herculesteam/augeasproviders_sysctl",
@@ -18,6 +18,12 @@
     {
       "name": "herculesteam/augeasproviders_core",
       "version_requirement": ">=2.1.0 < 3.0.0"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.7.0 < 7.0.0"
     }
   ],
   "data_provider": null,
