@@ -11,7 +11,7 @@ def location_for(place, fake_version = nil)
 end
 
 group :test do
-  gem 'puppetlabs_spec_helper', '~> 1.2.2',                         :require => false
+  gem 'puppetlabs_spec_helper', '~> 2.13.1',                        :require => false
   gem 'rspec-puppet',                                               :require => false, :git => 'https://github.com/rodjek/rspec-puppet.git'
   gem 'rspec-puppet-facts',                                         :require => false
   gem 'rspec-puppet-utils',                                         :require => false
@@ -34,7 +34,7 @@ group :test do
   gem 'redis', '3.3.3',                                             :require => false
   gem 'mock_redis',                                                 :require => false
   gem 'rack', '1.6.8',                                              :require => false
-  gem 'simp-rake-helpers', '3.6.0',                                 :require => false
+  gem 'simp-rake-helpers', '5.7.1',                                 :require => false
 end
 
 group :development do
@@ -48,7 +48,7 @@ group :system_tests do
   gem 'beaker-puppet_install_helper',  :require => false
   gem 'beaker-module_install_helper'
   gem 'vagrant-wrapper'
-  gem 'simp-beaker-helpers', :git => 'https://github.com/petems/rubygem-simp-beaker-helpers'
+  gem 'simp-beaker-helpers', '1.13.0'
 end
 
 ENV['PUPPET_GEM_VERSION'].nil? ? puppetversion = '~> 4.0' : puppetversion = ENV['PUPPET_GEM_VERSION'].to_s
