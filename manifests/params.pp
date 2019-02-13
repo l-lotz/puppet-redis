@@ -139,9 +139,9 @@ class redis::params {
           $config_group              = 'redis'
 
           case $::operatingsystemmajrelease {
-            '14.04': {
-              # upstream package is 2.8.4
-              $minimum_version           = '2.8.4'
+            '18.04': {
+              # upstream package is 4.0.9
+              $minimum_version           = '4.0.9'
             }
             '16.04': {
               # upstream package is 3.0.3

@@ -81,7 +81,7 @@ def centos_facts
   {
     :operatingsystem => 'CentOS',
     :osfamily        => 'RedHat',
-    :puppetversion   => '4.5.2',
+    :puppetversion   => '6.0.5',
   }
 end
 
@@ -89,17 +89,29 @@ def debian_facts
   {
     :operatingsystem           => 'Debian',
     :osfamily                  => 'Debian',
+    :operatingsystemmajrelease => '9',
+    :puppetversion             => '6.0.5',
+    :lsbdistcodename           => 'stretch',
+  }
+end
+
+def debian_jessie_facts
+  {
+    :operatingsystem           => 'Debian',
+    :osfamily                  => 'Debian',
     :operatingsystemmajrelease => '8',
-    :puppetversion             => '4.5.2',
+    :puppetversion             => '6.0.5',
     :lsbdistcodename           => 'jessie',
   }
 end
+
+
 
 def freebsd_facts
   {
     :operatingsystem => 'FreeBSD',
     :osfamily        => 'FreeBSD',
-    :puppetversion   => '4.5.2',
+    :puppetversion   => '6.0.5',
   }
 end
 
@@ -108,7 +120,7 @@ def centos_6_facts
     :operatingsystem => 'CentOS',
     :osfamily        => 'RedHat',
     :operatingsystemmajrelease => '6',
-    :puppetversion   => '4.5.2',
+    :puppetversion   => '6.0.5',
   }
 end
 
@@ -117,17 +129,7 @@ def centos_7_facts
     :operatingsystem => 'CentOS',
     :osfamily        => 'RedHat',
     :operatingsystemmajrelease => '7',
-    :puppetversion   => '4.5.2',
-  }
-end
-
-def debian_wheezy_facts
-  {
-    :operatingsystem           => 'Debian',
-    :osfamily                  => 'Debian',
-    :operatingsystemmajrelease => '8',
-    :puppetversion             => '4.5.2',
-    :lsbdistcodename           => 'wheezy',
+    :puppetversion   => '6.0.5',
   }
 end
 
@@ -136,7 +138,7 @@ def ubuntu_1404_facts
     :operatingsystem           => 'Ubuntu',
     :osfamily                  => 'Debian',
     :operatingsystemmajrelease => '14.04',
-    :puppetversion             => '4.5.2',
+    :puppetversion             => '6.0.5',
     :lsbdistcodename           => 'trusty',
   }
 end
@@ -146,8 +148,18 @@ def ubuntu_1604_facts
     :operatingsystem           => 'Ubuntu',
     :osfamily                  => 'Debian',
     :operatingsystemmajrelease => '16.04',
-    :puppetversion             => '4.5.2',
+    :puppetversion             => '6.0.5',
     :lsbdistcodename           => 'xenial',
+  }
+end
+
+def ubuntu_1804_facts
+  {
+    :operatingsystem           => 'Ubuntu',
+    :osfamily                  => 'Debian',
+    :operatingsystemmajrelease => '18.04',
+    :puppetversion             => '6.0.5',
+    :lsbdistcodename           => 'bionic',
   }
 end
 
@@ -155,7 +167,7 @@ def archlinux_facts
   {
     :operatingsystem => 'Archlinux',
     :osfamily        => 'Archlinux',
-    :puppetversion   => '4.5.2',
+    :puppetversion   => '6.0.5',
   }
 end
 

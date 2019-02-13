@@ -34,7 +34,7 @@ group :test do
   gem 'redis', '3.3.3',                                             :require => false
   gem 'mock_redis',                                                 :require => false
   gem 'rack', '1.6.8',                                              :require => false
-  gem 'simp-rake-helpers', '5.7.1',                                 :require => false
+  gem 'simp-rake-helpers',                                          :require => false, :git => 'https://github.com/simp/rubygem-simp-rake-helpers.git'
 end
 
 group :development do
